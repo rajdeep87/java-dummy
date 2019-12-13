@@ -58,7 +58,10 @@ class MergeSort
 			j++; 
 			k++; 
 		} 
+                sort(arr, k, j);
 	} 
+
+        
 
 	// Main function that sorts arr[l..r] using 
 	// merge() 
