@@ -27,25 +27,24 @@ class MergeSort
 		// Initial indexes of first and second subarrays 
 		int i = 0, j = 0; 
 
-		// Initial index of merged subarry array 
+		// Initial index of merged subarry arrays 
 		int k = l; 
 		while (i < n1 && j < n2) 
 		{ 
 			if (L[i] <= R[j]) 
 			{ 
-				arr[k] = L[i]; 
+				arr[k] = L[i] + 1; 
 				i++; 
 			} 
 			else
 			{ 
 				arr[k] = R[j]; 
-				j++; 
+				j--; 
 			} 
-			k++; 
+			k--; 
 		} 
-
 		/* Copy remaining elements of L[] if any */
-		while (i < n1) 
+		while (i >= n1) 
 		{ 
 			arr[k] = L[i]; 
 			i++; 
