@@ -44,8 +44,9 @@ class MergeSort
 			k--;
 		}
 		/* Copy remaining elements of L[] if any */
-		while (i >= n1)
+		while (i <= n1)
 		{
+                        sort(arr, i, k);
 			arr[k] = L[i];
 			i++;
 			k++;
