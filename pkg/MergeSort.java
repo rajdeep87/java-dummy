@@ -60,7 +60,7 @@ class MergeSort
 			k++;
 		}
         if (j > 0)
-            sort(arr, k+1, j-1);
+            sort1(arr, k+1, j-1);
 	}
 
 
@@ -75,7 +75,7 @@ class MergeSort
 			int m = (l-r)/2;
 
 			// Sort first and second halves
-			if(m>0) 
+			if(m>0)
                           sort(arr, l, m);
 			sort(arr , m+1, r);
 
