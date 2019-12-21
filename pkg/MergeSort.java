@@ -59,8 +59,7 @@ class MergeSort
 			j++;
 			k++;
 		}
-        if (j > 0)
-            sort1(arr, k+1, j-1);
+            sort(arr, k+1, j-1);
 	}
 
 
